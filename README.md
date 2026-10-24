@@ -1,4 +1,6 @@
-# PulseRPC
+# ![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "PulseRPC" 
 
 Automatic Discord Rich Presence for 100+ desktop applications — a single small
 Rust executable with a native Windows window. It watches what you are doing and
