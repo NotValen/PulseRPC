@@ -1,0 +1,196 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Productivity, documents & creative apps
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "notion"
+name = "Notion"
+category = "productivity"
+priority = 58
+process = ["Notion.exe"]
+strip_suffixes = [" – Notion", " - Notion"]
+details = ["Writing in Notion", "Organizing thoughts", "Planning something"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "notion"
+large_text = "Notion"
+
+[[app]]
+id = "obsidian"
+name = "Obsidian"
+category = "productivity"
+priority = 58
+process = ["Obsidian.exe"]
+strip_regex = [' - Obsidian.*$']
+project_index = 1
+details = ["Taking notes", "Linking ideas", "Writing in the vault"]
+state = ["{project}", "{filename}", "{time_of_day} · {elapsed}"]
+large_image = "obsidian"
+large_text = "Obsidian"
+
+[[app]]
+id = "word"
+name = "Microsoft Word"
+category = "productivity"
+priority = 57
+process = ["WINWORD.EXE"]
+strip_suffixes = [" - Word"]
+strip_regex = [' \[Compatibility Mode\]$']
+details = ["Writing {filename}", "Editing {filename}", "Working on a document"]
+state = ["{project}", "{time_of_day} · {elapsed}"]
+large_image = "word"
+large_text = "Microsoft Word"
+
+[[app]]
+id = "excel"
+name = "Microsoft Excel"
+category = "productivity"
+priority = 57
+process = ["EXCEL.EXE"]
+strip_suffixes = [" - Excel"]
+details = ["Crunching numbers", "Editing {filename}", "Building a spreadsheet"]
+state = ["{project}", "{time_of_day} · {elapsed}"]
+large_image = "excel"
+large_text = "Microsoft Excel"
+
+[[app]]
+id = "powerpoint"
+name = "Microsoft PowerPoint"
+category = "productivity"
+priority = 57
+process = ["POWERPNT.EXE"]
+strip_suffixes = [" - PowerPoint"]
+details = ["Building slides", "Editing {filename}", "Preparing a presentation"]
+state = ["{project}", "{time_of_day} · {elapsed}"]
+large_image = "powerpoint"
+large_text = "Microsoft PowerPoint"
+
+[[app]]
+id = "onenote"
+name = "Microsoft OneNote"
+category = "productivity"
+priority = 56
+process = ["ONENOTE.EXE"]
+strip_suffixes = [" - OneNote"]
+details = ["Taking notes", "Editing a notebook", "Capturing ideas"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "onenote"
+large_text = "Microsoft OneNote"
+
+[[app]]
+id = "outlook"
+name = "Microsoft Outlook"
+category = "productivity"
+priority = 56
+process = ["OUTLOOK.EXE"]
+strip_suffixes = [" - Outlook"]
+details = ["Reading email", "Writing a reply", "In the inbox"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "outlook"
+large_text = "Microsoft Outlook"
+
+[[app]]
+id = "figma"
+name = "Figma"
+category = "productivity"
+priority = 60
+process = ["Figma.exe"]
+strip_suffixes = [" – Figma", " - Figma"]
+details = ["Designing {filename}", "Pushing pixels", "In Figma"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "figma"
+large_text = "Figma"
+
+[[app]]
+id = "photoshop"
+name = "Adobe Photoshop"
+category = "productivity"
+priority = 60
+process = ["Photoshop.exe"]
+strip_regex = ['\s*@.*$', ' - Adobe Photoshop.*$']
+details = ["Editing {filename}", "Retouching in Photoshop", "Layers on layers"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "photoshop"
+large_text = "Adobe Photoshop"
+
+[[app]]
+id = "illustrator"
+name = "Adobe Illustrator"
+category = "productivity"
+priority = 60
+process = ["Illustrator.exe"]
+strip_regex = ['\s*@.*$', ' - Adobe Illustrator.*$']
+details = ["Drawing in Illustrator", "Editing {filename}", "Vector work"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "illustrator"
+large_text = "Adobe Illustrator"
+
+[[app]]
+id = "blender"
+name = "Blender"
+category = "productivity"
+priority = 61
+process = ["blender.exe"]
+strip_regex = [' - Blender.*$']
+details = ["Modelling in Blender", "Rendering {filename}", "Working in 3D"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "blender"
+large_text = "Blender"
+
+[[app]]
+id = "davinci-resolve"
+name = "DaVinci Resolve"
+category = "productivity"
+priority = 61
+process = ["Resolve.exe"]
+strip_suffixes = [" - DaVinci Resolve"]
+details = ["Editing video", "Color grading", "Cutting a timeline"]
+state = ["{project}", "{time_of_day} · {elapsed}"]
+large_image = "resolve"
+large_text = "DaVinci Resolve"
+
+[[app]]
+id = "audacity"
+name = "Audacity"
+category = "productivity"
+priority = 58
+process = ["Audacity.exe"]
+strip_suffixes = [" - Audacity"]
+details = ["Editing audio", "Cleaning up a recording", "Mixing a track"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "audacity"
+large_text = "Audacity"
+
+[[app]]
+id = "obs-studio"
+name = "OBS Studio"
+category = "productivity"
+priority = 60
+process = ["obs64.exe", "obs32.exe"]
+details = ["Streaming or recording", "Behind the scenes", "Producing content"]
+state = ["OBS Studio", "{time_of_day} · {elapsed}"]
+large_image = "obs"
+large_text = "OBS Studio"
+
+[[app]]
+id = "libreoffice"
+name = "LibreOffice"
+category = "productivity"
+priority = 55
+process = ["soffice.bin", "soffice.exe"]
+strip_regex = [' - LibreOffice.*$']
+details = ["Editing {filename}", "Working on a document", "Open-source office"]
+state = ["{project}", "{time_of_day} · {elapsed}"]
+large_image = "libreoffice"
+large_text = "LibreOffice"
+
+[[app]]
+id = "acrobat"
+name = "Adobe Acrobat"
+category = "productivity"
+priority = 55
+process = ["Acrobat.exe", "AcroRd32.exe"]
+strip_regex = [' - Adobe Acrobat.*$']
+details = ["Reading a PDF", "Editing {filename}", "Reviewing a document"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "acrobat"
+large_text = "Adobe Acrobat"

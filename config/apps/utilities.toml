@@ -1,0 +1,72 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Utilities
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "7zip"
+name = "7-Zip"
+category = "utilities"
+priority = 40
+process = ["7zFM.exe", "7zG.exe"]
+strip_suffixes = [" - 7-Zip"]
+details = ["Compressing files", "Extracting an archive", "Zipping something"]
+state = ["7-Zip", "{time_of_day} · {elapsed}"]
+large_image = "7zip"
+large_text = "7-Zip"
+
+[[app]]
+id = "everything"
+name = "Everything"
+category = "utilities"
+priority = 42
+process = ["Everything.exe"]
+requires_foreground = true
+details = ["Searching for files", "Finding that one file", "Instant search"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "everything"
+large_text = "Everything Search"
+
+[[app]]
+id = "anydesk"
+name = "AnyDesk"
+category = "utilities"
+priority = 50
+process = ["AnyDesk.exe"]
+details = ["Remote support session", "Connected to a remote desktop", "Helping someone out"]
+state = ["AnyDesk", "{time_of_day} · {elapsed}"]
+large_image = "anydesk"
+large_text = "AnyDesk"
+
+[[app]]
+id = "teamviewer"
+name = "TeamViewer"
+category = "utilities"
+priority = 50
+process = ["TeamViewer.exe"]
+details = ["Remote support session", "Connected to a remote desktop", "Helping someone out"]
+state = ["TeamViewer", "{time_of_day} · {elapsed}"]
+large_image = "teamviewer"
+large_text = "TeamViewer"
+
+[[app]]
+id = "qbittorrent"
+name = "qBittorrent"
+category = "utilities"
+priority = 41
+process = ["qbittorrent.exe"]
+details = ["Downloading things", "Seeding like a good citizen", "Managing torrents"]
+state = ["{time_of_day} · {elapsed}", "{title_short}"]
+large_image = "qbittorrent"
+large_text = "qBittorrent"
+
+[[app]]
+id = "calculator"
+name = "Calculator"
+category = "utilities"
+priority = 35
+process = ["CalculatorApp.exe", "Calculator.exe"]
+requires_foreground = true
+details = ["Doing math", "Calculating something", "Numbers, numbers"]
+state = ["{time_of_day} · {elapsed}", "Trusty calculator"]
+large_image = "calculator"
+large_text = "Calculator"

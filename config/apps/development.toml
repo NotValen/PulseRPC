@@ -1,0 +1,404 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Development tools
+#  Hot-reloads: save this file and the presence updates within a second.
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "vscode"
+name = "Visual Studio Code"
+category = "development"
+priority = 65
+process = ["Code.exe", "Code - Insiders.exe"]
+strip_suffixes = [" - Visual Studio Code", " - Code - Insiders", " - Insiders"]
+details = ["Editing {filename}", "Writing {filename}", "Working on {project}", "Coding in {project}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "vscode"
+large_text = "Visual Studio Code"
+buttons = [{ label = "Website", url = "https://code.visualstudio.com" }]
+
+[[app]]
+id = "cursor"
+name = "Cursor"
+category = "development"
+priority = 65
+process = ["Cursor.exe"]
+strip_suffixes = [" - Cursor"]
+details = ["Editing {filename}", "Pairing with AI in {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "cursor"
+large_text = "Cursor"
+
+[[app]]
+id = "windsurf"
+name = "Windsurf"
+category = "development"
+priority = 64
+process = ["Windsurf.exe"]
+strip_suffixes = [" - Windsurf"]
+details = ["Editing {filename}", "Sailing through {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "windsurf"
+large_text = "Windsurf"
+
+[[app]]
+id = "visual-studio"
+name = "Visual Studio"
+category = "development"
+priority = 64
+process = ["devenv.exe"]
+strip_suffixes = [" - Microsoft Visual Studio"]
+project_index = 1
+details = ["Editing {filename}", "Building {project}", "Debugging {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "visualstudio"
+large_text = "Visual Studio"
+
+[[app]]
+id = "intellij"
+name = "IntelliJ IDEA"
+category = "development"
+priority = 63
+process = ["idea64.exe", "idea.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Refactoring {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "intellij"
+large_text = "IntelliJ IDEA"
+
+[[app]]
+id = "pycharm"
+name = "PyCharm"
+category = "development"
+priority = 63
+process = ["pycharm64.exe", "pycharm.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing Python in {project}", "Debugging {project}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "pycharm"
+large_text = "PyCharm"
+
+[[app]]
+id = "webstorm"
+name = "WebStorm"
+category = "development"
+priority = 63
+process = ["webstorm64.exe", "webstorm.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Working on {project}", "Shipping frontend code"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} coding"]
+large_image = "webstorm"
+large_text = "WebStorm"
+
+[[app]]
+id = "clion"
+name = "CLion"
+category = "development"
+priority = 63
+process = ["clion64.exe", "clion.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing C++ in {project}", "Debugging {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "clion"
+large_text = "CLion"
+
+[[app]]
+id = "rider"
+name = "Rider"
+category = "development"
+priority = 63
+process = ["rider64.exe", "rider.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing C# in {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "rider"
+large_text = "Rider"
+
+[[app]]
+id = "goland"
+name = "GoLand"
+category = "development"
+priority = 63
+process = ["goland64.exe", "goland.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing Go in {project}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "goland"
+large_text = "GoLand"
+
+[[app]]
+id = "rustrover"
+name = "RustRover"
+category = "development"
+priority = 63
+process = ["rustrover64.exe", "rustrover.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Fighting the borrow checker", "Writing Rust in {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "rustrover"
+large_text = "RustRover"
+
+[[app]]
+id = "rubymine"
+name = "RubyMine"
+category = "development"
+priority = 62
+process = ["rubymine64.exe", "rubymine.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing Ruby in {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "rubymine"
+large_text = "RubyMine"
+
+[[app]]
+id = "phpstorm"
+name = "PhpStorm"
+category = "development"
+priority = 62
+process = ["phpstorm64.exe", "phpstorm.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Writing PHP in {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "phpstorm"
+large_text = "PhpStorm"
+
+[[app]]
+id = "datagrip"
+name = "DataGrip"
+category = "development"
+priority = 62
+process = ["datagrip64.exe", "datagrip.exe"]
+project_index = 0
+file_index = 1
+details = ["Writing SQL in {project}", "Inspecting a database", "Querying data"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "datagrip"
+large_text = "DataGrip"
+
+[[app]]
+id = "android-studio"
+name = "Android Studio"
+category = "development"
+priority = 64
+process = ["studio64.exe", "studio.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Building {project}", "Debugging an Android app"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "androidstudio"
+large_text = "Android Studio"
+
+[[app]]
+id = "sublime-text"
+name = "Sublime Text"
+category = "development"
+priority = 60
+process = ["sublime_text.exe"]
+strip_suffixes = [" - Sublime Text"]
+details = ["Editing {filename}", "Writing {filename}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "sublime"
+large_text = "Sublime Text"
+
+[[app]]
+id = "neovim"
+name = "Neovim"
+category = "development"
+priority = 58
+process = ["nvim.exe", "nvim-qt.exe"]
+strip_suffixes = [" - NVIM", " - nvim"]
+details = ["Editing {filename}", "In Neovim", "Terminal-first coding"]
+state = ["{project} · {elapsed}", "{filename}", "Vim motions"]
+large_image = "neovim"
+large_text = "Neovim"
+
+[[app]]
+id = "vim"
+name = "Vim"
+category = "development"
+priority = 56
+process = ["vim.exe", "gvim.exe"]
+strip_suffixes = [" - VIM", " - Vim"]
+details = ["Editing {filename}", "In Vim", ":wq incoming"]
+state = ["{filename}", "{project} · {elapsed}"]
+large_image = "vim"
+large_text = "Vim"
+
+[[app]]
+id = "emacs"
+name = "GNU Emacs"
+category = "development"
+priority = 56
+process = ["emacs.exe", "runemacs.exe"]
+strip_suffixes = [" - GNU Emacs", " - Emacs"]
+details = ["Editing {filename}", "Living in Emacs", "Extending my editor"]
+state = ["{project} · {elapsed}", "{filename}"]
+large_image = "emacs"
+large_text = "GNU Emacs"
+
+[[app]]
+id = "zed"
+name = "Zed"
+category = "development"
+priority = 62
+process = ["zed.exe"]
+strip_suffixes = [" - Zed"]
+details = ["Editing {filename}", "Writing code in Zed", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "zed"
+large_text = "Zed"
+
+[[app]]
+id = "fleet"
+name = "Fleet"
+category = "development"
+priority = 61
+process = ["fleet.exe"]
+project_index = 0
+file_index = 1
+details = ["Editing {filename}", "Working on {project}"]
+state = ["{project} · {elapsed}", "{project}"]
+large_image = "fleet"
+large_text = "Fleet"
+
+[[app]]
+id = "windows-terminal"
+name = "Windows Terminal"
+category = "development"
+priority = 55
+process = ["WindowsTerminal.exe", "wt.exe"]
+details = ["In the terminal", "Running commands", "A shell is open"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "terminal"
+large_text = "Windows Terminal"
+
+[[app]]
+id = "powershell"
+name = "PowerShell"
+category = "development"
+priority = 54
+process = ["powershell.exe", "pwsh.exe"]
+requires_foreground = true
+strip_prefixes = ["Administrator: ", "Admin: "]
+details = ["Running PowerShell", "Scripting something", "In the shell"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "powershell"
+large_text = "PowerShell"
+
+[[app]]
+id = "cmd"
+name = "Command Prompt"
+category = "development"
+priority = 52
+process = ["cmd.exe", "conhost.exe"]
+requires_foreground = true
+strip_prefixes = ["Administrator: ", "Admin: "]
+details = ["Using the command line", "Running commands"]
+state = ["{title_short}", "{time_of_day}"]
+large_image = "cmd"
+large_text = "Command Prompt"
+
+[[app]]
+id = "docker-desktop"
+name = "Docker Desktop"
+category = "development"
+priority = 60
+process = ["Docker Desktop.exe"]
+details = ["Managing containers", "Shipping with Docker", "Wrangling images"]
+state = ["Docker Desktop", "{time_of_day} · {elapsed}"]
+large_image = "docker"
+large_text = "Docker Desktop"
+
+[[app]]
+id = "postman"
+name = "Postman"
+category = "development"
+priority = 58
+process = ["Postman.exe"]
+strip_suffixes = [" - Postman"]
+project_index = 1
+details = ["Testing APIs", "Building a request", "Debugging endpoints"]
+state = ["{project} · {elapsed}", "{project}", "200 OK"]
+large_image = "postman"
+large_text = "Postman"
+
+[[app]]
+id = "dbeaver"
+name = "DBeaver"
+category = "development"
+priority = 57
+process = ["dbeaver.exe"]
+strip_suffixes = [" - DBeaver"]
+details = ["Querying a database", "Inspecting tables", "Writing SQL"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "dbeaver"
+large_text = "DBeaver"
+
+[[app]]
+id = "unity"
+name = "Unity"
+category = "development"
+priority = 68
+process = ["Unity.exe"]
+strip_regex = [' - Unity [0-9][^ ]*$']
+project_index = 0
+file_index = 1
+details = ["Building a game", "Editing {project}", "In the scene editor", "Wiring up {filename}"]
+state = ["{project} · {elapsed}", "{project}", "{time_of_day} gamedev"]
+large_image = "unity"
+large_text = "Unity"
+
+[[app]]
+id = "godot"
+name = "Godot"
+category = "development"
+priority = 67
+process = ["Godot*.exe", "godot.exe"]
+strip_regex = [' - Godot Engine.*$']
+details = ["Building a game", "Editing a scene", "Writing GDScript"]
+state = ["{project} · {elapsed}", "{title_short}"]
+large_image = "godot"
+large_text = "Godot Engine"
+
+[[app]]
+id = "rstudio"
+name = "RStudio"
+category = "development"
+priority = 57
+process = ["rstudio.exe"]
+strip_suffixes = [" - RStudio"]
+details = ["Analyzing data", "Writing R code", "Plotting something"]
+state = ["{filename}", "{time_of_day} · {elapsed}"]
+large_image = "rstudio"
+large_text = "RStudio"
+
+[[app]]
+id = "matlab"
+name = "MATLAB"
+category = "development"
+priority = 57
+process = ["MATLAB.exe"]
+details = ["Number crunching", "Writing MATLAB code", "Simulating something"]
+state = ["MATLAB", "{time_of_day} · {elapsed}"]
+large_image = "matlab"
+large_text = "MATLAB"
+
+[[app]]
+id = "gitkraken"
+name = "GitKraken"
+category = "development"
+priority = 55
+process = ["gitkraken.exe"]
+strip_suffixes = [" - GitKraken"]
+details = ["Browsing Git history", "Resolving conflicts", "Committing changes"]
+state = ["{title_short}", "{time_of_day} · {elapsed}"]
+large_image = "gitkraken"
+large_text = "GitKraken"

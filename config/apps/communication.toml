@@ -1,0 +1,91 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Communication apps
+#
+#  Window titles in chats often contain names of people or channels, so the
+#  defaults stay generic. Add  state = ["{title_short}"]  to a rule if you
+#  don't mind sharing the active conversation.
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "slack"
+name = "Slack"
+category = "communication"
+priority = 54
+process = ["slack.exe"]
+strip_suffixes = [" - Slack"]
+details = ["Chatting on Slack", "Catching up on messages", "In a huddle"]
+state = ["{time_of_day} · {elapsed}", "Busy being productive"]
+large_image = "slack"
+large_text = "Slack"
+
+[[app]]
+id = "teams"
+name = "Microsoft Teams"
+category = "communication"
+priority = 54
+process = ["ms-teams.exe", "Teams.exe"]
+strip_suffixes = [" - Microsoft Teams"]
+details = ["In a Teams meeting", "Chatting on Teams", "Catching up"]
+state = ["{time_of_day} · {elapsed}", "On a call"]
+large_image = "teams"
+large_text = "Microsoft Teams"
+
+[[app]]
+id = "zoom"
+name = "Zoom"
+category = "communication"
+priority = 55
+process = ["Zoom.exe"]
+details = ["In a Zoom meeting", "On a call", "Meeting remotely"]
+state = ["{time_of_day} · {elapsed}", "Camera optional"]
+large_image = "zoom"
+large_text = "Zoom"
+
+[[app]]
+id = "telegram"
+name = "Telegram"
+category = "communication"
+priority = 53
+process = ["Telegram.exe"]
+strip_suffixes = [" - Telegram"]
+details = ["Messaging on Telegram", "Catching up on chats"]
+state = ["{time_of_day} · {elapsed}", "Replying to messages"]
+large_image = "telegram"
+large_text = "Telegram"
+
+[[app]]
+id = "whatsapp"
+name = "WhatsApp"
+category = "communication"
+priority = 53
+process = ["WhatsApp.exe", "WhatsAppDesktop.exe"]
+strip_suffixes = [" - WhatsApp"]
+details = ["Chatting on WhatsApp", "Catching up with friends"]
+state = ["{time_of_day} · {elapsed}", "Replying to messages"]
+large_image = "whatsapp"
+large_text = "WhatsApp"
+
+[[app]]
+id = "signal"
+name = "Signal"
+category = "communication"
+priority = 53
+process = ["Signal.exe"]
+strip_suffixes = [" - Signal"]
+details = ["Messaging on Signal", "Catching up privately"]
+state = ["{time_of_day} · {elapsed}", "End-to-end"]
+large_image = "signal"
+large_text = "Signal"
+
+[[app]]
+id = "discord"
+name = "Discord"
+category = "communication"
+priority = 52
+process = ["Discord.exe", "DiscordPTB.exe", "DiscordCanary.exe"]
+strip_suffixes = [" | Discord", " - Discord"]
+requires_foreground = true
+details = ["Chatting on Discord", "Hanging out in a server", "In a voice channel"]
+state = ["{time_of_day} · {elapsed}", "Talking to friends"]
+large_image = "discord"
+large_text = "Discord"

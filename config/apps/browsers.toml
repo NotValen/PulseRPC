@@ -1,0 +1,98 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Browsers
+#
+#  Privacy-first: page titles are hidden by default. If you want the page
+#  title in your status, add e.g.  state = ["{title_short}"]  to a rule.
+#  Incognito/InPrivate/private windows never expose their title.
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "chrome"
+name = "Google Chrome"
+category = "browser"
+priority = 50
+process = ["chrome.exe"]
+requires_foreground = true
+strip_suffixes = [" - Google Chrome"]
+details = ["Browsing the web", "Surfing the web", "Reading online", "Down a rabbit hole"]
+state = ["{time_of_day} browsing", "{elapsed} online", "One more tab"]
+large_image = "chrome"
+large_text = "Google Chrome"
+
+[[app]]
+id = "firefox"
+name = "Firefox"
+category = "browser"
+priority = 50
+process = ["firefox.exe"]
+requires_foreground = true
+strip_suffixes = [" - Mozilla Firefox", " — Mozilla Firefox"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "firefox"
+large_text = "Firefox"
+
+[[app]]
+id = "edge"
+name = "Microsoft Edge"
+category = "browser"
+priority = 50
+process = ["msedge.exe"]
+requires_foreground = true
+strip_suffixes = [" - Microsoft Edge"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "edge"
+large_text = "Microsoft Edge"
+
+[[app]]
+id = "brave"
+name = "Brave"
+category = "browser"
+priority = 50
+process = ["brave.exe"]
+requires_foreground = true
+strip_suffixes = [" - Brave"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "brave"
+large_text = "Brave"
+
+[[app]]
+id = "opera"
+name = "Opera"
+category = "browser"
+priority = 50
+process = ["opera.exe"]
+requires_foreground = true
+strip_suffixes = [" - Opera"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "opera"
+large_text = "Opera"
+
+[[app]]
+id = "vivaldi"
+name = "Vivaldi"
+category = "browser"
+priority = 50
+process = ["vivaldi.exe"]
+requires_foreground = true
+strip_suffixes = [" - Vivaldi"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "vivaldi"
+large_text = "Vivaldi"
+
+[[app]]
+id = "arc"
+name = "Arc"
+category = "browser"
+priority = 50
+process = ["Arc.exe"]
+requires_foreground = true
+strip_suffixes = [" - Arc"]
+details = ["Browsing the web", "Surfing the web", "Reading online"]
+state = ["{time_of_day} browsing", "{elapsed} online"]
+large_image = "arc"
+large_text = "Arc"

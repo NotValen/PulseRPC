@@ -1,0 +1,333 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Games
+#
+#  Game rules require the foreground window, so launchers sitting in the
+#  background never take over your presence. Fullscreen windows get an extra
+#  score bonus automatically (detection.fullscreen_bonus).
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "steam"
+name = "Steam"
+category = "games"
+priority = 40
+process = ["steam.exe"]
+requires_foreground = true
+title_contains = ["steam"]
+details = ["Browsing Steam", "Looking for a game", "Adding to the backlog"]
+state = ["{time_of_day} · {elapsed}", "Sales incoming"]
+large_image = "steam"
+large_text = "Steam"
+
+[[app]]
+id = "epic-games"
+name = "Epic Games Launcher"
+category = "games"
+priority = 40
+process = ["EpicGamesLauncher.exe"]
+requires_foreground = true
+details = ["Browsing the Epic library", "Claiming free games", "Looking for a game"]
+state = ["{time_of_day} · {elapsed}", "Free game day"]
+large_image = "epic"
+large_text = "Epic Games"
+
+[[app]]
+id = "minecraft"
+name = "Minecraft"
+category = "games"
+priority = 82
+process = ["javaw.exe", "Minecraft.exe", "MinecraftLauncher.exe"]
+title_contains = ["minecraft"]
+requires_foreground = true
+details = ["Playing Minecraft", "Building something", "Mining away"]
+state = ["{elapsed} played", "{time_of_day} session", "One more block"]
+large_image = "minecraft"
+large_text = "Minecraft"
+
+[[app]]
+id = "roblox"
+name = "Roblox"
+category = "games"
+priority = 82
+process = ["RobloxPlayerBeta.exe", "RobloxStudioBeta.exe"]
+requires_foreground = true
+details = ["Playing Roblox", "In a Roblox experience"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "roblox"
+large_text = "Roblox"
+
+[[app]]
+id = "league-of-legends"
+name = "League of Legends"
+category = "games"
+priority = 84
+process = ["League of Legends.exe", "LeagueClientUx.exe", "LeagueClient.exe"]
+requires_foreground = true
+details = ["Playing League of Legends", "In champ select", "On the Rift"]
+state = ["{elapsed} played", "{time_of_day} ranked", "One more game"]
+large_image = "lol"
+large_text = "League of Legends"
+
+[[app]]
+id = "valorant"
+name = "VALORANT"
+category = "games"
+priority = 84
+process = ["VALORANT.exe", "VALORANT-Win64-Shipping.exe"]
+requires_foreground = true
+details = ["Playing VALORANT", "Holding an angle", "Clutch or kick"]
+state = ["{elapsed} played", "{time_of_day} ranked"]
+large_image = "valorant"
+large_text = "VALORANT"
+
+[[app]]
+id = "cs2"
+name = "Counter-Strike 2"
+category = "games"
+priority = 84
+process = ["cs2.exe"]
+requires_foreground = true
+details = ["Playing Counter-Strike 2", "Rushing B", "Trade kills"]
+state = ["{elapsed} played", "{time_of_day} premier"]
+large_image = "cs2"
+large_text = "Counter-Strike 2"
+
+[[app]]
+id = "dota2"
+name = "Dota 2"
+category = "games"
+priority = 84
+process = ["dota2.exe"]
+requires_foreground = true
+details = ["Playing Dota 2", "In the mid lane", "Defending the ancient"]
+state = ["{elapsed} played", "{time_of_day} ranked"]
+large_image = "dota2"
+large_text = "Dota 2"
+
+[[app]]
+id = "genshin"
+name = "Genshin Impact"
+category = "games"
+priority = 82
+process = ["GenshinImpact.exe"]
+requires_foreground = true
+details = ["Exploring Teyvat", "Playing Genshin Impact", "Farming artifacts"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "genshin"
+large_text = "Genshin Impact"
+
+[[app]]
+id = "osu"
+name = "osu!"
+category = "games"
+priority = 82
+process = ["osu!.exe"]
+requires_foreground = true
+details = ["Playing osu!", "Clicking circles", "Chasing a new high score"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "osu"
+large_text = "osu!"
+
+[[app]]
+id = "rocket-league"
+name = "Rocket League"
+category = "games"
+priority = 83
+process = ["RocketLeague.exe"]
+requires_foreground = true
+details = ["Playing Rocket League", "Whiffing in style", "Aerial practice"]
+state = ["{elapsed} played", "{time_of_day} ranked"]
+large_image = "rocketleague"
+large_text = "Rocket League"
+
+[[app]]
+id = "overwatch"
+name = "Overwatch 2"
+category = "games"
+priority = 83
+process = ["Overwatch.exe"]
+requires_foreground = true
+details = ["Playing Overwatch 2", "In a match", "Flexing support"]
+state = ["{elapsed} played", "{time_of_day} ranked"]
+large_image = "overwatch"
+large_text = "Overwatch 2"
+
+[[app]]
+id = "destiny2"
+name = "Destiny 2"
+category = "games"
+priority = 82
+process = ["destiny2.exe"]
+requires_foreground = true
+details = ["Playing Destiny 2", "Chasing loot", "In orbit"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "destiny2"
+large_text = "Destiny 2"
+
+[[app]]
+id = "warframe"
+name = "Warframe"
+category = "games"
+priority = 82
+process = ["Warframe.x64.exe", "Warframe.exe"]
+requires_foreground = true
+details = ["Playing Warframe", "Farming resources", "Fashion framing"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "warframe"
+large_text = "Warframe"
+
+[[app]]
+id = "gta5"
+name = "Grand Theft Auto V"
+category = "games"
+priority = 83
+process = ["GTA5.exe", "GTA5_Enhanced.exe"]
+requires_foreground = true
+details = ["Playing GTA V", "Causing chaos in Los Santos", "On a mission"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "gta5"
+large_text = "Grand Theft Auto V"
+
+[[app]]
+id = "rdr2"
+name = "Red Dead Redemption 2"
+category = "games"
+priority = 83
+process = ["RDR2.exe"]
+requires_foreground = true
+details = ["Playing Red Dead Redemption 2", "Riding across the frontier"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "rdr2"
+large_text = "Red Dead Redemption 2"
+
+[[app]]
+id = "cyberpunk"
+name = "Cyberpunk 2077"
+category = "games"
+priority = 83
+process = ["Cyberpunk2077.exe"]
+requires_foreground = true
+details = ["Playing Cyberpunk 2077", "Exploring Night City"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "cyberpunk"
+large_text = "Cyberpunk 2077"
+
+[[app]]
+id = "elden-ring"
+name = "ELDEN RING"
+category = "games"
+priority = 83
+process = ["eldenring.exe"]
+requires_foreground = true
+details = ["Playing ELDEN RING", "Dying to a boss", "Exploring the Lands Between"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "eldenring"
+large_text = "ELDEN RING"
+
+[[app]]
+id = "terraria"
+name = "Terraria"
+category = "games"
+priority = 81
+process = ["Terraria.exe"]
+requires_foreground = true
+details = ["Playing Terraria", "Digging deeper", "Building a base"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "terraria"
+large_text = "Terraria"
+
+[[app]]
+id = "stardew-valley"
+name = "Stardew Valley"
+category = "games"
+priority = 81
+process = ["Stardew Valley.exe"]
+requires_foreground = true
+details = ["Playing Stardew Valley", "Tending the farm", "Fishing for the bundle"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "stardew"
+large_text = "Stardew Valley"
+
+[[app]]
+id = "among-us"
+name = "Among Us"
+category = "games"
+priority = 81
+process = ["Among Us.exe"]
+requires_foreground = true
+details = ["Playing Among Us", "Looking sus", "Doing tasks"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "amongus"
+large_text = "Among Us"
+
+[[app]]
+id = "fortnite"
+name = "Fortnite"
+category = "games"
+priority = 83
+process = ["FortniteClient-Win64-Shipping.exe"]
+requires_foreground = true
+details = ["Playing Fortnite", "Dropping in", "Building and editing"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "fortnite"
+large_text = "Fortnite"
+
+[[app]]
+id = "apex-legends"
+name = "Apex Legends"
+category = "games"
+priority = 83
+process = ["r5apex.exe"]
+requires_foreground = true
+details = ["Playing Apex Legends", "Dropping hot", "Third-partying"]
+state = ["{elapsed} played", "{time_of_day} ranked"]
+large_image = "apex"
+large_text = "Apex Legends"
+
+[[app]]
+id = "pubg"
+name = "PUBG: BATTLEGROUNDS"
+category = "games"
+priority = 82
+process = ["TslGame.exe"]
+requires_foreground = true
+details = ["Playing PUBG", "Chasing the chicken dinner"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "pubg"
+large_text = "PUBG"
+
+[[app]]
+id = "rust"
+name = "Rust"
+category = "games"
+priority = 82
+process = ["RustClient.exe"]
+requires_foreground = true
+details = ["Playing Rust", "Farming scrap", "Defending the base"]
+state = ["{elapsed} played", "{time_of_day} wipe day"]
+large_image = "rustgame"
+large_text = "Rust"
+
+[[app]]
+id = "factorio"
+name = "Factorio"
+category = "games"
+priority = 81
+process = ["factorio.exe"]
+requires_foreground = true
+details = ["Playing Factorio", "The factory must grow", "Optimizing the line"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "factorio"
+large_text = "Factorio"
+
+[[app]]
+id = "euro-truck"
+name = "Euro Truck Simulator 2"
+category = "games"
+priority = 80
+process = ["eurotrucks2.exe"]
+requires_foreground = true
+details = ["Driving across Europe", "Delivering cargo", "On the road"]
+state = ["{elapsed} played", "{time_of_day} session"]
+large_image = "ets2"
+large_text = "Euro Truck Simulator 2"

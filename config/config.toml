@@ -1,0 +1,139 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  PulseRPC — global configuration
+#
+#  Edit this file (or anything in apps/) while PulseRPC is running:
+#  changes are hot-reloaded within about a second. If a reload fails, the
+#  previous working config stays active and the error is written to the log.
+# ═══════════════════════════════════════════════════════════════════════════
+
+[presence]
+
+# Your Discord application id (Developer Portal → Applications → General).
+# 1. https://discord.com/developers/applications  → New Application
+# 2. Copy the "Application ID" here
+# 3. Optional: upload artwork under Rich Presence → Art Assets, using the
+#    image keys referenced by the rules (e.g. "vscode", "spotify", "cs2").
+client_id = "000000000000000000"
+
+# How often rotating messages change (seconds). 0 disables rotation.
+rotate_secs = 45
+
+# Re-assert the presence at least this often (seconds) so a Discord restart
+# cannot leave a stale/empty profile. Discord allows ~5 updates / 20s.
+refresh_secs = 60
+
+# Minimum seconds between activity updates (rate-limit safety).
+min_update_secs = 4
+
+# Ignore focus changes shorter than this; prevents flicker when alt-tabbing.
+switch_delay_ms = 1200
+
+# Returning to an app within this window keeps the original session timer.
+resume_window_secs = 300
+
+# When the focused app is not configured, keep the previous presence this long
+# before falling back to the generic "desktop" state.
+keep_last_secs = 45
+
+# Show "elapsed" timers on activities.
+show_elapsed = true
+
+# 0 = Playing, 2 = Listening, 3 = Watching, 5 = Competing.
+# Rules can override this individually.
+activity_type = 0
+
+# Set to false to hide all rule buttons.
+buttons = true
+
+# Optional global image fallbacks, used when a rule doesn't define its own:
+# large_image = "logo"
+# small_image = "dot"
+
+
+[detection]
+
+# Process/window scan interval. 2500 ms is a good balance of responsiveness
+# and idle CPU (a scan is well under a millisecond).
+poll_ms = 2500
+
+# Score added when the app owns the foreground window. This is what makes
+# "the thing you are using" beat background apps.
+foreground_bonus = 1000
+
+# Extra score for a borderless/exclusive fullscreen window (games).
+fullscreen_bonus = 150
+
+# After this many seconds without keyboard/mouse input, show the idle state.
+# Set to 0 to disable idle detection.
+idle_after_secs = 600
+
+# Never report the presence of these processes.
+process_blacklist = [
+  "explorer.exe",
+  "searchhost.exe",
+  "startmenuexperiencehost.exe",
+  "shellexperiencehost.exe",
+  "applicationframehost.exe",
+  "textinputhost.exe",
+  "dwm.exe",
+  "csrss.exe",
+  "winlogon.exe",
+  "svchost.exe",
+  "runtimebroker.exe",
+  "backgroundtaskhost.exe",
+]
+
+# Window titles containing these words are treated as private: the title is
+# hidden from templates (rules still match the app itself).
+title_blacklist = [
+  "incognito",
+  "inprivate",
+  "private browsing",
+  "private window",
+]
+
+
+[privacy]
+
+# Hide window titles in private browsing windows.
+hide_when_private = true
+
+# Reserved for path-based rules: never expose filesystem paths unless asked.
+hide_paths = true
+
+# Blank the {host} template variable.
+hide_hostname = true
+
+
+[logging]
+
+# error | warn | info | debug | trace
+level = "info"
+
+# Write to %LOCALAPPDATA%\PulseRPC\logs\pulserpc.log
+file = true
+
+# Rotate the log at this size (single .old.log generation).
+max_kb = 2048
+
+
+# ─────────────────────────────── idle ───────────────────────────────
+# Shown after detection.idle_after_secs without input.
+[idle]
+enabled = true
+details = ["Away", "Idle", "Stepped away", "Not at the keyboard"]
+state = ["{idle_for} idle", "Back soon", "Away for {idle_for}", "{time_of_day} break"]
+large_image = "idle"
+large_text = "PulseRPC"
+small_image = "sleep"
+small_text = "Idle"
+
+
+# ───────────────────────────── fallback ─────────────────────────────
+# Shown when nothing configured is in focus (and you are not idle).
+[fallback]
+enabled = true
+details = ["On the desktop", "Between apps", "Looking around", "No app in focus"]
+state = ["{time_of_day}", "{day} · {time}", "Taking a moment"]
+large_image = "logo"
+large_text = "PulseRPC"

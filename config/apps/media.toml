@@ -1,0 +1,126 @@
+# ═══════════════════════════════════════════════════════════════════════
+#  Music & video players
+#
+#  `media = true` parses "Artist - Title" from the window title and exposes
+#  {artist}, {track} and {media} template variables.
+#  `activity_type = 2` shows "Listening to …" instead of "Playing …".
+#
+#  By default a foreground app (bonus +1000) wins over a background player.
+#  Want music to always be shown while it plays? Set its priority above
+#  1000, e.g. `priority = 1200` — it will then outrank anything in focus.
+# ═══════════════════════════════════════════════════════════════════════
+
+[[app]]
+id = "spotify"
+name = "Spotify"
+category = "media"
+priority = 45
+process = ["Spotify.exe"]
+media = true
+activity_type = 2
+strip_suffixes = [" | Spotify", " - Spotify"]
+strip_prefixes = ["▶ ", "⏸ "]
+details = ["🎧 {track}", "Listening to {track}", "{track}", "Listening to music"]
+state = ["by {artist}", "{artist}", "Now playing", "{elapsed} of vibes"]
+large_image = "spotify"
+large_text = "Spotify"
+small_image = "music"
+buttons = [{ label = "Open Spotify", url = "https://open.spotify.com" }]
+
+[[app]]
+id = "vlc"
+name = "VLC"
+category = "media"
+priority = 44
+process = ["vlc.exe"]
+media = true
+activity_type = 3
+strip_suffixes = [" - VLC media player"]
+details = ["Watching {track}", "Playing {track}", "Watching something"]
+state = ["VLC", "{elapsed} playback", "{time_of_day} viewing"]
+large_image = "vlc"
+large_text = "VLC media player"
+
+[[app]]
+id = "foobar2000"
+name = "foobar2000"
+category = "media"
+priority = 44
+process = ["foobar2000.exe"]
+media = true
+activity_type = 2
+strip_suffixes = [" [foobar2000]", " - foobar2000"]
+details = ["🎧 {track}", "Listening to {track}", "Listening to music"]
+state = ["by {artist}", "{artist}", "foobar2000"]
+large_image = "foobar"
+large_text = "foobar2000"
+
+[[app]]
+id = "musicbee"
+name = "MusicBee"
+category = "media"
+priority = 44
+process = ["MusicBee.exe"]
+media = true
+activity_type = 2
+strip_suffixes = [" - MusicBee"]
+details = ["🎧 {track}", "Listening to {track}", "Listening to music"]
+state = ["by {artist}", "{artist}", "MusicBee"]
+large_image = "musicbee"
+large_text = "MusicBee"
+
+[[app]]
+id = "itunes"
+name = "iTunes"
+category = "media"
+priority = 44
+process = ["iTunes.exe", "AppleMusic.exe"]
+media = true
+activity_type = 2
+strip_suffixes = [" - iTunes", " - Apple Music"]
+details = ["🎧 {track}", "Listening to {track}", "Listening to music"]
+state = ["by {artist}", "{artist}", "Now playing"]
+large_image = "itunes"
+large_text = "iTunes"
+
+[[app]]
+id = "mpc-hc"
+name = "MPC-HC"
+category = "media"
+priority = 43
+process = ["mpc-hc64.exe", "mpc-hc.exe"]
+media = true
+activity_type = 3
+strip_regex = [' - MPC-HC.*$']
+details = ["Watching {track}", "Playing {track}", "Watching something"]
+state = ["MPC-HC", "{elapsed} playback"]
+large_image = "mpc"
+large_text = "MPC-HC"
+
+[[app]]
+id = "potplayer"
+name = "PotPlayer"
+category = "media"
+priority = 43
+process = ["PotPlayerMini64.exe", "PotPlayerMini.exe"]
+media = true
+activity_type = 3
+strip_suffixes = [" - PotPlayer"]
+details = ["Watching {track}", "Playing {track}", "Watching something"]
+state = ["PotPlayer", "{elapsed} playback"]
+large_image = "potplayer"
+large_text = "PotPlayer"
+
+[[app]]
+id = "aimp"
+name = "AIMP"
+category = "media"
+priority = 43
+process = ["AIMP.exe"]
+media = true
+activity_type = 2
+strip_suffixes = [" - AIMP"]
+details = ["🎧 {track}", "Listening to {track}", "Listening to music"]
+state = ["by {artist}", "{artist}", "AIMP"]
+large_image = "aimp"
+large_text = "AIMP"
