@@ -1,5 +1,7 @@
 # [PulseRPC](https://raw.githubusercontent.com/NotValen/PulseRPC/99c0245b955b423b688770075eec2fa4c0cf85b8/assets/preview.png)
 ![alt text](https://raw.githubusercontent.com/NotValen/PulseRPC/99c0245b955b423b688770075eec2fa4c0cf85b8/assets/preview.png "Logo Title Text 1")
+
+
 Automatic Discord Rich Presence for 100+ desktop applications — a single small
 Rust executable with a native Windows window. It watches what you are doing and
 keeps your Discord profile in sync. No Electron, no background services, no
